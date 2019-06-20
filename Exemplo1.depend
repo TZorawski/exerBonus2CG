@@ -1,33 +1,26 @@
 # depslib dependency file v1.0
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2015/2 semestre/BCC35F - Computa√ß√£o Gr√°fica/Slides/8 - Transforma√ß√µes Geom√©tricas 3D/C√≥digos Slides/Linux/Exemplo1/main.c
+1444154508 source:d:\dropbox\utfpr\disciplinas\2015\2 semestre\bcc35f - computaÁ„o gr·fica\slides\8 - transformaÁıes geomÈtricas 3d\cÛdigos slides\windows\exemplo1\main.c
+	<windows.h>
 	<stdio.h>
-	<GL/freeglut.h>
+	<GL/glut.h>
 
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2016/1 semestre/BCC35F - Computa√ß√£o Gr√°fica/Slides/8 - Transforma√ß√µes Geom√©tricas 3D/C√≥digos Slides/Linux/Exemplo1/main.c
+1444150908 source:d:\dropbox\utfpr\disciplinas\2016\1 semestre\bcc35f - computaÁ„o gr·fica\slides\8 - transformaÁıes geomÈtricas 3d\cÛdigos slides\windows\exemplo1\main.c
+	<windows.h>
 	<stdio.h>
-	<GL/freeglut.h>
+	<GL/glut.h>
 
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2016/2 semestre/BCC35F - Computa√ß√£o Gr√°fica/Slides/8 - Transforma√ß√µes Geom√©tricas 3D/C√≥digos Slides/Linux/Exemplo1/main.c
+1444150908 source:d:\dropbox\utfpr\disciplinas\2016\2 semestre\bcc35f - computaÁ„o gr·fica\slides\8 - transformaÁıes geomÈtricas 3d\cÛdigos slides\windows\exemplo1\main.c
+	<windows.h>
 	<stdio.h>
-	<GL/freeglut.h>
+	<GL/glut.h>
 
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2017/1 semestre/BCC35F - Computa√ß√£o Gr√°fica/Slides/7 - Transforma√ß√µes Geom√©tricas 3D/Codigos Slides/Linux/Exemplo1/main.c
+1444150908 source:c:\users\areth\dropbox\utfpr\disciplinas\2018\2 semestre\bcc35f - computacao grafica\slides\6 - transformaÁıes geomÈtricas 3d\codigos slides\windows\exemplo1\main.c
+	<windows.h>
 	<stdio.h>
-	<GL/freeglut.h>
+	<GL/glut.h>
 
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2017/2 semestre/BCC35F - Computacao Grafica/Slides/6 - Transforma√ß√µes Geom√©tricas 3D/Codigos Slides/Linux/Exemplo1/main.c
+1560816422 source:c:\users\thais\documents\5_semestre\cg\exerbonus2cg\main.c
+	<windows.h>
 	<stdio.h>
-	<GL/freeglut.h>
-
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2018/1 semestre/BCC35F - Computacao Grafica/Slides/6 - Transforma√ß√µes Geom√©tricas 3D/Codigos Slides/Linux/Exemplo1/main.c
-	<stdio.h>
-	<GL/freeglut.h>
-
-1445273221 source:/home/aretha/Dropbox/UTFPR/Disciplinas/2018/2 semestre/BCC35F - Computacao Grafica/Slides/6 - Transforma√ß√µes Geom√©tricas 3D/Codigos Slides/Linux/Exemplo1/main.c
-	<stdio.h>
-	<GL/freeglut.h>
-
-1559605571 source:/home/todos/alunos/cm/a1511556/Downloads/Codigos - Transformacoes Geometricas 3D/Codigos Slides/Linux/Exemplo1/main.c
-	<stdio.h>
-	<GL/freeglut.h>
+	<GL/glut.h>
 
