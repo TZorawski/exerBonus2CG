@@ -2,12 +2,22 @@
 #include <stdio.h>
 #include <GL/glut.h>
 
-float alpha=0, beta=0, delta=1;
+float alpha=0, beta=0, delta=1, spin=0;
 
+void timer_func(int n){
+	//if(spin < 360){
+    spin = spin + 1;                    // Atualiza rotação do objeto
+	//} else {
+	//    spin = 0;
+	//}
+	glutPostRedisplay();                // carrega tela
+    //glutTimerFunc(tempo, timer_func, n);
+	glutTimerFunc(10, timer_func, 0);   // chama callback
+}
 
 int init(void){
-    glClearColor(1.0, 1.0, 1.0, 1.0);     //define a cor de fundo
-    glEnable(GL_DEPTH_TEST);           //remoção de superfície oculta
+    glClearColor(1.0, 1.0, 1.0, 1.0);       //define a cor de fundo
+    glEnable(GL_DEPTH_TEST);                //remoção de superfície oculta
 }
 
 void display(void){
@@ -42,9 +52,6 @@ void display(void){
               0, 0, -1); // define posição camera (posicao camera, para onde camera olha, vetor view up: orientacao - camera de pé)
 
     glColor3f(1, 0, 0);                 //define cor objeto
-    //glRotatef(beta, 0, 1, 0);
-    //glRotatef(alpha, 1, 0, 0);
-    //glScalef(delta, delta, delta);
     glutWireTeapot(1.5);                  //desenha bule wired e centrado na origem(tamanho)
     // ==========================
 
@@ -61,9 +68,9 @@ void display(void){
               0, 1, 0); // define posição camera (posicao camera, para onde camera olha, vetor view up: orientacao - camera de pé)
 
     glColor3f(1, 1, 0);                 //define cor objeto
-    glRotatef(beta, 0, 1, 0);
-    glRotatef(alpha, 1, 0, 0);
-    glScalef(delta, delta, delta);
+    glRotated(45, 1, 0, 0);
+    glRotated(spin, 0, 0, 1);
+
     glutWireTeapot(1.5);                  //desenha bule wired e centrado na origem(tamanho)
     // ==========================
 
@@ -80,36 +87,9 @@ void display(void){
               0, 1, 0); // define posição camera (posicao camera, para onde camera olha, vetor view up: orientacao - camera de pé)
 
     glColor3f(1, 0, 0);                 //define cor objeto
-    //glRotatef(beta, 0, 1, 0);
-    //glRotatef(alpha, 1, 0, 0);
-    //glScalef(delta, delta, delta);
     glutWireTeapot(1.5);                  //desenha bule wired e centrado na origem(tamanho)
 
     glFlush();                       //desenha os comandos não executados
-}
-
-// Função que trata teclas especiais do teclado
-void keyPressed_special(int key, int x, int y){
-    if(key == GLUT_KEY_PAGE_UP){//faz zoom-in
-        delta = delta * 1.1f;
-    }
-    if(key == GLUT_KEY_PAGE_DOWN){//faz zoom-out
-        delta = delta * 0.809f;
-    }
-    if(key == GLUT_KEY_RIGHT){//gira sobre o eixo-y
-        beta = beta - 1;
-    }
-    if(key == GLUT_KEY_LEFT){//gira sobre o eixo-y
-        beta = beta + 1;
-    }
-    if(key == GLUT_KEY_UP){ //gira sobre o eixo-x
-        alpha = alpha - 1;
-    }
-    if(key == GLUT_KEY_DOWN){ //gira sobre o eixo-x
-         alpha = alpha + 1;
-    }
-
-    glutPostRedisplay();
 }
 
 int main(int argc, char** argv){
@@ -120,9 +100,10 @@ int main(int argc, char** argv){
     glutCreateWindow("Exercicio Bonus 2");                 //cria a janela de exibição
 
     init();                                         //executa função de inicialização
-    glutSpecialFunc(keyPressed_special);
     glutDisplayFunc(display);
-    glutMainLoop();                                  //mostre tudo e espere
+    timer_func(0);
+    glutMainLoop();                                 //mostre tudo e espere
+
     return 0;
 }
 
